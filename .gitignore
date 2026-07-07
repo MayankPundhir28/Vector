@@ -1,0 +1,15 @@
+
+node_modules/
+
+.env
+.env.local
+
+dist/
+build/
+
+server/prisma/migrations/dev.db
+
+.DS_Store
+Thumbs.db
+
+*.log
