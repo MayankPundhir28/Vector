@@ -7,6 +7,8 @@ import progressRoutes from "./routes/progressRoutes.js";
 import planRoutes from "./routes/planRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import errorHandler from "./middleware/errorHandler.js";
+import authRoutes from "./routes/authRoutes.js";
+
 dotenv.config();
 const app = express();
 
@@ -21,6 +23,7 @@ app.use("/api/plans", planRoutes);
 app.use("/api/topics", topicRoutes);
 app.use("/api/progress", progressRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/auth", authRoutes);
 app.use(errorHandler);
 
 export default app;
